@@ -1,9 +1,8 @@
-import {Component, signal, Signal} from '@angular/core';
+import {Component, signal} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {MatIconButton} from "@angular/material/button";
 import {NgClass, NgStyle} from "@angular/common";
 import {MatToolbar} from "@angular/material/toolbar";
-import {AbstractControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-theme-toggle',

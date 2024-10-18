@@ -1,14 +1,6 @@
-import {
-  AfterViewInit,
-  Component, ElementRef, input, Input,
-  OnChanges,
-  OnInit,
-  SimpleChanges, ViewChild
-} from '@angular/core';
-import {MatInput} from "@angular/material/input";
-import {PlaceAutocompleteComponent} from "../place-autocomplete/place-autocomplete.component";
-import { fromEvent } from 'rxjs';
-import { map, debounceTime, distinctUntilChanged } from 'rxjs/operators';
+import {AfterViewInit, Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
+import {fromEvent} from 'rxjs';
+import {debounceTime, distinctUntilChanged, map} from 'rxjs/operators';
 import {NgIf} from "@angular/common";
 
 @Component({
