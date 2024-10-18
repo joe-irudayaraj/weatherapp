@@ -140,13 +140,6 @@
     ora "5.4.1"
     rxjs "7.8.1"
 
-"@angular-material-extensions/google-maps-autocomplete@^16.4.0":
-  version "16.4.0"
-  resolved "https://registry.npmjs.org/@angular-material-extensions/google-maps-autocomplete/-/google-maps-autocomplete-16.4.0.tgz"
-  integrity sha512-S06ZKi4saWBMy2aFd3CnACs9w2pWrzAi4SVHQ3wLuWuDTl79QgkYdfLB7b/wCUi1+QhcuWchaiXbWJmMgDxNlw==
-  dependencies:
-    tslib "^2.3.0"
-
 "@angular/animations@^18.0.0", "@angular/animations@^18.0.0 || ^19.0.0", "@angular/animations@18.2.7":
   version "18.2.7"
   resolved "https://registry.npmjs.org/@angular/animations/-/animations-18.2.7.tgz"
@@ -185,7 +178,7 @@
     vite "5.4.6"
     watchpack "2.4.1"
 
-"@angular/cdk@^16.x", "@angular/cdk@^18.2.6", "@angular/cdk@>=15.0.0", "@angular/cdk@18.2.6":
+"@angular/cdk@^18.2.6", "@angular/cdk@18.2.6":
   version "18.2.6"
   resolved "https://registry.npmjs.org/@angular/cdk/-/cdk-18.2.6.tgz"
   integrity sha512-Gfq/iv4zhlKYpdQkDaBRwxI71NHNUHM1Cs1XhnZ0/oFct5HXvSv1RHRGTKqBJLLACaAPzZKXJ/UglLoyO5CNiQ==
@@ -217,7 +210,7 @@
     symbol-observable "4.0.0"
     yargs "17.7.2"
 
-"@angular/common@^16.x", "@angular/common@^18.0.0", "@angular/common@^18.0.0 || ^19.0.0", "@angular/common@>=15.0.2", "@angular/common@18.2.7":
+"@angular/common@^18.0.0", "@angular/common@^18.0.0 || ^19.0.0", "@angular/common@18.2.7":
   version "18.2.7"
   resolved "https://registry.npmjs.org/@angular/common/-/common-18.2.7.tgz"
   integrity sha512-5vDBmBR2JcIxHVEDunKXNU+T+OvTGiHZTSo35GFOHJxKFgX5g6+0tJBZunK04oBZGbJQUmp3pg2kMvuKKjZnkQ==
@@ -245,21 +238,14 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^16.x", "@angular/core@^18.0.0", "@angular/core@^18.0.0 || ^19.0.0", "@angular/core@>=15.0.2", "@angular/core@18.2.7":
+"@angular/core@^18.0.0", "@angular/core@^18.0.0 || ^19.0.0", "@angular/core@18.2.7":
   version "18.2.7"
   resolved "https://registry.npmjs.org/@angular/core/-/core-18.2.7.tgz"
   integrity sha512-hLOxgxLiyWm9iVHBsUsJfx1hDsXWZnfJBlr+N7cev53f0CDoPfbshqq6KV+JFqXFDguzR9dKHm1ewT1jK3e6Tw==
   dependencies:
     tslib "^2.3.0"
 
-"@angular/flex-layout@^15.0.0-beta.42":
-  version "15.0.0-beta.42"
-  resolved "https://registry.npmjs.org/@angular/flex-layout/-/flex-layout-15.0.0-beta.42.tgz"
-  integrity sha512-cTAPVMMxnyIFwpZwdq0PL5mdP9Qh+R8MB7ZBezVaN3Rz2fRrkagzKpLvPX3TFzepXrvHBdpKsU4b8u+NxEC/6g==
-  dependencies:
-    tslib "^2.3.0"
-
-"@angular/forms@^16.x", "@angular/forms@^18.0.0", "@angular/forms@^18.0.0 || ^19.0.0":
+"@angular/forms@^18.0.0", "@angular/forms@^18.0.0 || ^19.0.0":
   version "18.2.7"
   resolved "https://registry.npmjs.org/@angular/forms/-/forms-18.2.7.tgz"
   integrity sha512-WO3c9/OA7ekBnDBgmvi5TlHshOt5S4NREIP+/VVyuRgg28BwUWyO/Nqh19nguE1UNNRt6OMLkT6NSV2ewhcXUg==
@@ -274,7 +260,7 @@
     "@types/google.maps" "^3.54.10"
     tslib "^2.3.0"
 
-"@angular/material@^16.x", "@angular/material@^18.0.3":
+"@angular/material@^18.0.3":
   version "18.2.6"
   resolved "https://registry.npmjs.org/@angular/material/-/material-18.2.6.tgz"
   integrity sha512-ObxC/vomSb9QF3vIztuiInQzws+D6u09Dhfx6uNFjtyICqxEFpF7+Qx7QVDWrsuXOgxZTKgacK8f46iV8hWUfg==
@@ -288,7 +274,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-browser@^16.x", "@angular/platform-browser@^18.0.0", "@angular/platform-browser@^18.0.0 || ^19.0.0", "@angular/platform-browser@>=15.0.2", "@angular/platform-browser@18.2.7":
+"@angular/platform-browser@^18.0.0", "@angular/platform-browser@^18.0.0 || ^19.0.0", "@angular/platform-browser@18.2.7":
   version "18.2.7"
   resolved "https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-18.2.7.tgz"
   integrity sha512-xgj2DH/isFrMZ73dJJm89NRnWBI3AHtugQrZbIapkKBdEt/C1o4SR2W2cV4mPb9o+ELnWurfrxFt9o/q2vnVLw==
@@ -1922,7 +1908,7 @@
   resolved "https://registry.npmjs.org/@types/google.maps/-/google.maps-3.58.1.tgz"
   integrity sha512-X9QTSvGJ0nCfMzYOnaVs/k6/4L+7F5uCS+4iUmkLEls6J9S/Phv+m/i3mDeyc49ZBgwab3EFO1HEoBY7k98EGQ==
 
-"@types/googlemaps@^3.43.3", "@types/googlemaps@~3.43.3":
+"@types/googlemaps@^3.43.3":
   version "3.43.3"
   resolved "https://registry.npmjs.org/@types/googlemaps/-/googlemaps-3.43.3.tgz"
   integrity sha512-ZWNoz/O8MPEpiajvj7QiqCY8tTLFNqNZ/a+s+zTV58wFVNAvvqV4bdGfnsjTb5Cs4V6wEsLrX8XRhmnyYJ2Tdg==
@@ -5623,7 +5609,7 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-"rxjs@^6.5.3 || ^7.4.0", rxjs@^7.x, rxjs@~7.8.0, rxjs@7.8.1:
+"rxjs@^6.5.3 || ^7.4.0", rxjs@~7.8.0, rxjs@7.8.1:
   version "7.8.1"
   resolved "https://registry.npmjs.org/rxjs/-/rxjs-7.8.1.tgz"
   integrity sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==
@@ -6793,7 +6779,7 @@ yoctocolors-cjs@^2.1.2:
   resolved "https://registry.npmjs.org/yoctocolors-cjs/-/yoctocolors-cjs-2.1.2.tgz"
   integrity sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==
 
-zone.js@~0.13.x, zone.js@~0.14.10, zone.js@~0.14.3:
+zone.js@~0.14.10, zone.js@~0.14.3:
   version "0.14.10"
   resolved "https://registry.npmjs.org/zone.js/-/zone.js-0.14.10.tgz"
   integrity sha512-YGAhaO7J5ywOXW6InXNlLmfU194F8lVgu7bRntUF3TiG8Y3nBK0x1UJJuHUP/e8IyihkjCYqhCScpSwnlaSRkQ==
