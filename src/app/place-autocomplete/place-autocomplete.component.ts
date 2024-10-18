@@ -57,23 +57,16 @@ export class PlaceAutocompleteComponent implements OnInit, AfterViewInit {
       google.maps.event.clearInstanceListeners(this.cityInput.nativeElement);
       autocomplete.addListener('place_changed', () => {
         const place = autocomplete.getPlace();
-        console.log('coming here', place.formatted_address);
+        //console.log('coming here', place.formatted_address);
         if (place.formatted_address) {
           this.cityDetails = place;
-          console.log(`Selected City: ${this.cityDetails.formatted_address}`);
+         // console.log(`Selected City: ${this.cityDetails.formatted_address}`);
           this.placeChanged.set(true);
-          //
-          //console.log(this.placeChanged() +''+this.cityDetails);
         }
       });
     } else {
       console.error('Google Maps API script not loaded');
     }
-    // if(autocomplete) {
-
-
-    // }
-
     const autocompleteService = new google.maps.places.AutocompleteService();
     this.cityInput.nativeElement.addEventListener('input', () => {
       const query = this.cityInput.nativeElement.value;
