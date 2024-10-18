@@ -1,0 +1,8 @@
+<div class="container">
+  <mat-toolbar [ngClass]="{'light-theme': theme === 'light_mode', 'dark-theme': theme === 'dark_mode'}" [ngStyle]="{'background-color':theme==='dark_mode'?'transparent':''}">
+    <button mat-icon-button class="theme-toggle-button" (click)="toggleTheme()">
+        <mat-icon>{{ theme }}
+        </mat-icon>
+    </button>
+  </mat-toolbar>
+</div>

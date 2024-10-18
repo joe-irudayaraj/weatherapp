@@ -1,0 +1,33 @@
+<div class="centered-container">
+  <div class="row align-items-center">
+    <div class="col-auto">
+      <mat-form-field appearance="outline">
+        <mat-label>Enter city name</mat-label>
+        <input matInput #cityInput>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="button" class="btn btn-primary mt-2" style="margin-left: 10px"
+              (click)="searchWeather()">Search Weather
+      </button>
+    </div>
+    <div class="row align-items-center">
+      <ng-template></ng-template>
+      <ng-container *ngIf="placeChanged() && cityDetails">
+        <div>
+          <h3>City Details:</h3>
+          <p>Name: {{ cityDetails.formatted_address }}</p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+
+  <!--<div *ngIf="cityDetails">
+    <h3>City Details:</h3>
+    <p>Name: {{ cityDetails.name }}</p>
+    <p>Address: {{ cityDetails.formatted_address }}</p>
+    <p>Lat: {{ cityDetails.geometry?.location?.lat() }}</p>
+    <p>Lng: {{ cityDetails.geometry?.location?.lng() }}</p>
+  </div>-->
+</div>
+
+

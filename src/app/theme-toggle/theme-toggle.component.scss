@@ -1,0 +1,13 @@
+.theme-toggle-button {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+
+}
+
+.light-theme {
+  .theme-toggle-button {
+    background-color: honeydew;
+  }
+
+}
