@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, EventEmitter, OnInit, Output, signal, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, OnInit, signal, ViewChild} from '@angular/core';
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {NgIf} from "@angular/common";
 import {MatInput} from "@angular/material/input";

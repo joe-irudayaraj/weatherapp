@@ -1,10 +1,9 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {MatAutocomplete, MatAutocompleteTrigger, MatOption} from "@angular/material/autocomplete";
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {AsyncPipe, NgForOf} from "@angular/common";
-import {FormControl, ReactiveFormsModule} from "@angular/forms";
-import {map, Observable, startWith} from "rxjs";
+import {ReactiveFormsModule} from "@angular/forms";
 import {MatCard, MatCardContent, MatCardTitle} from "@angular/material/card";
 import {MatToolbar} from "@angular/material/toolbar";
 import {PlaceAutocompleteComponent} from "./place-autocomplete/place-autocomplete.component";
