@@ -2,39 +2,32 @@
 
 @include mat.core();
 
+// Define your palettes
+$primary-palette: mat.$m2-indigo-palette;
+$accent-palette: mat.$m2-pink-palette;
 
-mat.$theme-ignore-duplication-warnings: true;
-
-$dark-primary: mat.m2-define-palette(mat.$m2-indigo-palette);
-$dark-accent: mat.m2-define-palette(mat.$m2-pink-palette, A200, A100, A400);
-
-$light-primary: mat.m2-define-palette(mat.$m2-indigo-palette);
-$light-accent: mat.m2-define-palette(mat.$m2-pink-palette, A200, A100, A400);
-
+// Define your dark theme
 $dark-theme: mat.m2-define-dark-theme(
     (
       color: (
-        primary: $dark-primary,
-        accent: $dark-accent,
+        primary: mat.m2-define-palette($primary-palette),
+        accent: mat.m2-define-palette($accent-palette, A200, A100, A400),
       )
     )
 );
 
+// Define your light theme
 $light-theme: mat.m2-define-light-theme(
     (
       color: (
-        primary: $light-primary,
-        accent: $light-accent,
-        background: mat.$m2-grey-palette
+        primary: mat.m2-define-palette($primary-palette),
+        accent: mat.m2-define-palette($accent-palette, A200, A100, A400),
+        background: mat.$m2-grey-palette,
       )
     )
 );
 
-.dark-theme {
-  @include mat.all-component-themes($dark-theme);
-  background: #303030;
-  color: white;
-}
+// Use your themes
 
 .light-theme {
   @include mat.all-component-themes($light-theme);
@@ -46,9 +39,15 @@ $light-theme: mat.m2-define-light-theme(
   }
 }
 
-.pac-container:after {
-  /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
+.dark-theme {
+  @include mat.all-component-colors($dark-theme);
+  background: #303030;
+  color: white;
+}
 
+
+
+.pac-container:after {
   background-image: none !important;
   height: 0;
 }
